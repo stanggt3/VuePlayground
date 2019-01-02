@@ -1,6 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import Examples from "./views/Examples.vue";
+import MonsterGame from './views/MonsterGame.vue';
+import Lifecycle from './views/Lifecycle.vue';
 
 Vue.use(Router);
 
@@ -12,6 +15,21 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/examples",
+      name: "examples",
+      component: Examples
+    },
+    {
+      path: "/MonsterGame",
+      name: "MonsterGame",
+      component: MonsterGame
+    },
+    {
+      path: "/Lifecycle",
+      name: "lifecycle",
+      component: Lifecycle
     },
     {
       path: "/about",
